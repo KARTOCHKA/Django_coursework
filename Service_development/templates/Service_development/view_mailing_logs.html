@@ -1,0 +1,6 @@
+<h3>{{ mailing_list.name }} Logs</h3>
+<ul>
+  {% for log in logs %}
+    <li>{{ log.client.name }} - Sent at: {{ log.sent_at }}</li>
+  {% endfor %}
+</ul>

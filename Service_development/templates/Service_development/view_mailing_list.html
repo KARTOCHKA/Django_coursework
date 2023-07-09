@@ -1,0 +1,7 @@
+<h3>{{ mailing_list.name }}</h3>
+<h4>Clients:</h4>
+<ul>
+  {% for client in mailing_list.clients.all %}
+    <li>{{ client.name }}</li>
+  {% endfor %}
+</ul>
